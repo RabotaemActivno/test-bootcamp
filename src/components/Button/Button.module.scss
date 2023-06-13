@@ -1,0 +1,24 @@
+.button_1 {
+    width: 80px;
+    height: 45px;
+    font-size: 14px;
+    padding: 16px 12px;
+    color: white;
+    background: #5558FA;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    &:hover {
+        background: #4749da;
+    }
+}
+.button_2 {
+    width: 80px;
+    height: 45px;
+    font-size: 14px;
+    color: #5558FA;
+    background: white;
+    border-radius: 4px;
+    border: 2px solid #5558FA;
+    cursor: pointer;
+}
