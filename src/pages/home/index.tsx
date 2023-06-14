@@ -13,9 +13,9 @@ export function Home() {
                     <div className={styles.name}>Иван Иванов</div>
                     <div className={styles.contacts}>
                         <ul>
-                            <li><VectorSVG /><a href="/">Telegram</a></li>
-                            <li><VectorSVG /><a href="/">GitHub</a></li>
-                            <li><VectorSVG /><a href="/">Resume</a></li>
+                            <li><VectorSVG /><a target="_blank" href="https://t.me/polnoePogruzhenie">Telegram</a></li>
+                            <li><VectorSVG /><a target="_blank" href="https://github.com/RabotaemActivno">GitHub</a></li>
+                            <li><VectorSVG /><a target="_blank" href="https://kazan.hh.ru/resume/8d189563ff0bf8d6a40039ed1f376372556471">Resume</a></li>
                         </ul>
                     </div>
                 </div>

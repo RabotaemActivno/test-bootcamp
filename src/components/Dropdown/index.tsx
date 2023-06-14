@@ -31,7 +31,7 @@ export function Dropdown() {
 
     return (
         <div className={styles.dropdown}>
-            <button onClick={onClickHandler}>{dropdownState.title}</button>
+            <button onClick={onClickHandler}><span>{dropdownState.title}</span></button>
             <div className={`${class1} ${dropdownState.isOpen ? class2 : ''}`}>
                 <div className={styles.dropdown_content_wrapper}>
                     <div onClick={() => onOptionClick('man')}>
