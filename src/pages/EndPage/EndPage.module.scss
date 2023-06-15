@@ -1,0 +1,88 @@
+.root {
+    padding: 66px 110px;
+}
+
+.progressLine_line {
+    width: 680px;
+    height: 8px;
+    background: #5558FA;
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 103px;
+
+}
+
+.dot_wrapper {
+    margin: 0 auto;
+    width: 680px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 62px;
+    left: 0;
+    right: 0;
+}
+
+.dot {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    border: 6px solid #5558FA;
+    background: #ffff;
+
+    &:last-child {
+        border: 6px solid #5558FA;
+        background: #ffff;
+    }
+
+    &:nth-of-type(-n+2) {
+        background: #5558FA;
+        position: relative;
+
+        &::before {
+            content: url('./Vector.svg');
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+
+.number_wrapper {
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 auto;
+    font-weight: 600;
+    width: 680px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    color: #5558FA;
+}
+
+.field_wrapper {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    textarea {
+        margin-top: 8px;
+        padding: 12px;
+        width: 680px;
+        height: 84px;
+        border: 1px solid rgba(0, 0, 0, 0.16);
+        border-radius: 4px;
+        margin-bottom: 88px;
+    }
+}
+.button_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
