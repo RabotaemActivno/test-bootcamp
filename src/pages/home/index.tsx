@@ -3,6 +3,7 @@ import styles from './Home.module.scss'
 import { ReactComponent as AvatarSVG } from './Avatar.svg'
 import { ReactComponent as VectorSVG } from './Vector.svg'
 import { Button } from '../../components/Button'
+import { Link } from 'react-router-dom'
 
 export function Home() {
     return (
@@ -32,7 +33,9 @@ export function Home() {
                         <input type="text" />
                     </div>
                 </div>
-                <Button buttonType={1} text='Начать'/>
+                <Link to='/start'>
+                    <Button buttonType={1} text='Начать' />
+                </Link>
             </div>
         </div>
     )

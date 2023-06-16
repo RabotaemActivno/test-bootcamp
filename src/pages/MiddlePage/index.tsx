@@ -1,6 +1,7 @@
 import styles from './MidldlePage.module.scss'
 import { useState } from 'react'
 import { v1 } from 'uuid'
+import { Link } from 'react-router-dom';
 import { Button } from '../../components/Button';
 
 export function MidldlePage() {
@@ -90,8 +91,12 @@ export function MidldlePage() {
                     </ul>
                 </div>
                 <div className={styles.button_wrapper}>
-                    <Button buttonType={2} text='назад'/>
-                    <Button buttonType={1} text='вперед'/>
+                    <Link to='/start'>
+                        <Button buttonType={2} text='назад' />
+                    </Link>
+                    <Link to='/end'>
+                        <Button buttonType={1} text='вперед' />
+                    </Link>
                 </div>
             </div>
         </div>

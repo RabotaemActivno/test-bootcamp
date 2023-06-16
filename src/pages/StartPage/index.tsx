@@ -1,6 +1,7 @@
 import styles from './StartPage.module.scss'
 import { Button } from '../../components/Button'
 import { Dropdown } from '../../components/Dropdown'
+import { Link } from 'react-router-dom'
 
 export function StartPage() {
     return (
@@ -33,11 +34,15 @@ export function StartPage() {
                 </div>
                 <div className={styles.dropdown_wrapper}>
                     <div className={styles.subtitle}>Sex</div>
-                    <Dropdown/>
+                    <Dropdown />
                 </div>
                 <div className={styles.button_wrapper}>
-                    <Button text='назад' buttonType={2} />
-                    <Button text='вперед' buttonType={1} />
+                    <Link to='/'>
+                        <Button text='назад' buttonType={2} />
+                    </Link>
+                    <Link to='/middle'>
+                        <Button text='вперед' buttonType={1} />
+                    </Link>
                 </div>
             </div>
         </div>

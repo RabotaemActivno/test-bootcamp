@@ -1,8 +1,9 @@
 import { Button } from '../../components/Button'
 import styles from './EndPage.module.scss'
+import { Link } from 'react-router-dom'
 
-export function EndPage () {
-    return(
+export function EndPage() {
+    return (
         <div className={styles.root}>
             <div>
                 <div className={styles.progressLine_line}></div>
@@ -22,8 +23,10 @@ export function EndPage () {
                 <textarea name="" id="" cols={30} rows={10}></textarea>
             </div>
             <div className={styles.button_wrapper}>
-                <Button buttonType={2} text='назад'/>
-                <Button buttonType={1} text='отправить'/>
+                <Link to='/middle'>
+                    <Button buttonType={2} text='назад' />
+                </Link>
+                <Button buttonType={1} text='отправить' />
             </div>
         </div>
     )
