@@ -3,13 +3,16 @@ import { useState } from 'react'
 import { v1 } from 'uuid'
 import { Link } from 'react-router-dom';
 import { Button } from '../../components/Button';
+import { ScrollTotop } from '../../functions/ScrollTotop';
 
 export function MidldlePage() {
+
+    ScrollTotop()
 
     const [lists, setLists] = useState([v1(), v1(), v1()])
     const [selectedCheckbox, setSelectedCheckbox] = useState('');
     const [selectedRadio, setSelectedRadio] = useState('');
-
+ 
     const addInput = () => {
         const newList = v1()
         setLists([...lists, newList])
